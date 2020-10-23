@@ -84,6 +84,8 @@ These different thresholds of points yield the following accuracies:
 
 ### Advanced Usage
 
+#### Training with a variable number of points
+
 In training, you can switch the number of points during training. To do this, you must stop training, save current model weights, create a different size model, and then resume training with a different number of points if you wish to, as shown below:
 
     ###################################
@@ -136,6 +138,7 @@ In training, you can switch the number of points during training. To do this, yo
       epochs=epochs,
     )                                              # Fit your model to the data.
 
+#### Inference with a variable number of points
 
 At inference, you will just need to load trained weights into a model of that size as is shown in `predict.py` by doing:
 
