@@ -145,9 +145,7 @@ At inference, you will just need to load trained weights into a model of that si
     model = PointNet_cls(num_classes, num_points)  # 'num_points' is the size of the points in your data to predict on,
                                                    # this can be different from the number of points which the network
                                                    # was trained with.
-
     model.load_weights("path/to/weights.h5")       # The weights come from a PointNet model trained with any input size.
-
     model.predict(data)                            # 'data' is of the dimensionality (num_points, 3).
 
 This can be done repeatedly (as within training) by creating a new model and re-loading the weights to allow different input sizes for different sets of data or different sized data.
