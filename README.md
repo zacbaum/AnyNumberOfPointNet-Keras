@@ -6,7 +6,7 @@
 
 By implementing PointNet in a way which is invariant to the input size, this repository is home to a useful implementation of [PointNet](https://github.com/charlesq34/pointnet) which **permits use of any number of points at in training or at inference.**
 
-In training, **you must use a fixed number of points throughout the current training process** (e.g. if you begin training with 1500 points, all inputs must have 1500 points). However, you can pause training, and restart with a different number of points (see: [Advanced Usage](#advancedusage)). At inference, you may use any number of points, even changing this at every different prediction if you want (see: [Advanced Usage](#advancedusage)).
+**In training, you must use a fixed number of points throughout the current training process** (e.g. if you begin training with 1500 points, all inputs must have 1500 points). However, you can pause training, and restart with a different number of points (see: [Advanced Usage](#advanced-usage)). **At inference, you may use any number of points, even changing this at every different prediction if you want** (see: [Advanced Usage](#advanced-usage)).
 
 This code is based on the Keras/TF implementations available [here](https://github.com/TianzhongSong/PointNet-Keras) and [here](https://github.com/garyli1019/pointnet-keras).
 
